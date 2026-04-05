@@ -15,7 +15,7 @@ function resizeCanvas() {
 resizeCanvas();
 window.addEventListener('resize', resizeCanvas);
 
-const COLORS = ['#00e87a', '#7c6af7', '#00cfff', '#ffd166'];
+const COLORS = ['#2d9cdb', '#7c6af7', '#00cfff', '#56b7f0'];
 const particles = [];
 const PARTICLE_COUNT = 60;
 
@@ -52,7 +52,7 @@ class Particle {
 // Grid lines
 function drawGrid() {
   ctx.save();
-  ctx.strokeStyle = 'rgba(124,106,247,0.04)';
+  ctx.strokeStyle = 'rgba(45,156,219,0.05)';
   ctx.lineWidth = 0.5;
   const size = 80;
   for (let x = 0; x < canvas.width; x += size) {
